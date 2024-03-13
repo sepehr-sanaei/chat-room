@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<form method ="post">
+		{% csrf_token %}
+		{{form.as_p}}
+		<br>
+		<button type = "submit">Sing Up</button>
+	</form>
+  <h5>Already Have An Account?</h5>
+  <a href={% url 'login-user' %}><button type = "button">Login</button></a>
+</body>
+</html>
